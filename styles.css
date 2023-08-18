@@ -29,6 +29,11 @@ img.background-image {
 .left-container {
     display: flex;
     flex-direction: column;
+    width: 33%;
+}
+
+.right-container {
+    width: 67%; 
 }
 
 .left-container > .logo {
@@ -40,7 +45,6 @@ img.background-image {
 
 .left-container > .logo > .logo-text {
     font-size: var(--logo-height);
-    color: white;
     font-family: "Norse Bold";
 }
 
@@ -49,9 +53,7 @@ img.background-image {
 }
 
 .left-container > .footer {
-    color: white;
 }
 
 .left-container > .footer > a {
-    color: white;
 }
