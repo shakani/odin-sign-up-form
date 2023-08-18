@@ -9,6 +9,11 @@ body {
     flex-direction: row;
 }
 
+@font-face {
+    font-family: 'Norse Bold';
+    src: url(./Norse-Bold.otf);
+}
+
 .italic {
     font-style: italic;
 }
@@ -36,6 +41,7 @@ img.background-image {
 .left-container > .logo > .logo-text {
     font-size: var(--logo-height);
     color: white;
+    font-family: "Norse Bold";
 }
 
 .left-container > .logo > img {
