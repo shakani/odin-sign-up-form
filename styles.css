@@ -21,15 +21,11 @@ body {
 
 img.background-image {
     position: absolute;
+    /* height: 100vh; */
     width: calc(100vw/3);
-    height: 100%;
     top: 0;
     bottom: 0;
     z-index: -1;
-}
-
-.right-container {
-    width: calc(100vw*2/3); 
 }
 
 .left-container {
@@ -71,4 +67,13 @@ img.background-image {
 
 .left-container > .footer > a {
     color: white;
+}
+
+/*** RIGHT CONTAINER  ***/
+
+.right-container {
+    width: calc(100vw*2/3);
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(249, 250, 251);
 }
