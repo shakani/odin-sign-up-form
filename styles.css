@@ -1,5 +1,5 @@
 :root {
-    --logo-height: 8rem;
+    --logo-height: 6rem;
 }
 
 body {
@@ -7,6 +7,7 @@ body {
     /* background-color: gray; */
     display: flex;
     flex-direction: row;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 @font-face {
@@ -26,26 +27,36 @@ img.background-image {
     z-index: -1;
 }
 
-.left-container {
-    display: flex;
-    flex-direction: column;
-    width: 33%;
+.right-container {
+    width: calc(100vw*2/3); 
 }
 
-.right-container {
-    width: 67%; 
+.left-container {
+    /* border: 1px solid red; */
+    background-color: gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: calc(100vw/3);
+    height: 100vh;
 }
 
 .left-container > .logo {
     background-color: rgba(0, 0, 0, 0.5);
+    margin-top: 20vh;
     display: flex;
     flex-direction: row;
+    justify-content: center;
     align-items: center;
+    width: 100%;
 }
 
 .left-container > .logo > .logo-text {
     font-size: var(--logo-height);
     font-family: "Norse Bold";
+    margin-top: 2rem;
+    color: white;
 }
 
 .left-container > .logo > img {
@@ -53,7 +64,12 @@ img.background-image {
 }
 
 .left-container > .footer {
+    /* border: 1px solid red; */
+    margin-top: auto;
+    margin-bottom: 16px;
+    color: white;
 }
 
 .left-container > .footer > a {
+    color: white;
 }
